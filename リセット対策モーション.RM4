@@ -1,0 +1,597 @@
+<medit>
+	<format data="2"/>
+</medit>
+
+
+<medit>
+	<block name="" type="3" xpos="50" ypos="10" bluearrow="6" redarrow="0"/>
+</medit>
+<jump adr="0x0000317d"/>
+
+
+<medit>
+	<block name="   END   " type="4" xpos="599" ypos="25" bluearrow="16" redarrow="46"/>
+</medit>
+<wait size="1" adr="0x0b43"/>
+<return/>
+
+
+<medit>
+	<block name="<< Wait >>" type="10" xpos="130" ypos="60" bluearrow="6" redarrow="6"/>
+</medit>
+<wait data="5"/>
+
+<medit>
+	<block name="COMMENT" type="9" xpos="70" ypos="100" bluearrow="16" redarrow="46"/>
+	<comment data="コールドスタートorホットスタートの判別" />
+</medit>
+<jump adr="0x00002182"/>
+
+
+<medit>
+	<block name="ID2" type="1" xpos="50" ypos="190" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dc3">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dc3"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x0000040c"/>
+
+
+<medit>
+	<block name="ID3" type="1" xpos="50" ypos="230" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dc5">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dc5"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00000598"/>
+
+
+<medit>
+	<block name="ID4" type="1" xpos="50" ypos="270" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dc7">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dc7"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00000724"/>
+
+
+<medit>
+	<block name="ID5" type="1" xpos="50" ypos="310" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dc9">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dc9"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x000008b0"/>
+
+
+<medit>
+	<block name="ID6" type="1" xpos="50" ypos="350" bluearrow="18" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dcb">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dcb"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00000a3c"/>
+
+
+<medit>
+	<block name="ID7" type="1" xpos="50" ypos="420" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dcd">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dcd"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00000bc8"/>
+
+
+<medit>
+	<block name="ID8" type="1" xpos="50" ypos="460" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dcf">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dcf"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00000d54"/>
+
+
+<medit>
+	<block name="ID9" type="1" xpos="50" ypos="500" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dd1">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dd1"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00000ee0"/>
+
+
+<medit>
+	<block name="ID10" type="1" xpos="50" ypos="540" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dd3">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dd3"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x0000106d"/>
+
+
+<medit>
+	<block name="ID11" type="1" xpos="50" ypos="580" bluearrow="84" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dd5">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dd5"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x000011fa"/>
+
+
+<medit>
+	<block name="ID12" type="1" xpos="50" ypos="640" bluearrow="17" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dd7">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dd7"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00001387"/>
+
+
+<medit>
+	<block name="ID13" type="1" xpos="50" ypos="700" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0dd9">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0dd9"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00001514"/>
+
+
+<medit>
+	<block name="ID14" type="1" xpos="50" ypos="740" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0ddb">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0ddb"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x000016a1"/>
+
+
+<medit>
+	<block name="ID15" type="1" xpos="50" ypos="780" bluearrow="80" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0ddd">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0ddd"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x0000182e"/>
+
+
+<medit>
+	<block name="ID16" type="1" xpos="50" ypos="840" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0ddf">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0ddf"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x000019bb"/>
+
+
+<medit>
+	<block name="ID17" type="1" xpos="50" ypos="880" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0de1">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0de1"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00001b48"/>
+
+
+<medit>
+	<block name="ID18" type="1" xpos="50" ypos="920" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0de3">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0de3"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00001cd5"/>
+
+
+<medit>
+	<block name="ID19" type="1" xpos="50" ypos="1010" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0de5">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0de5"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00001e63"/>
+
+
+<medit>
+	<block name="ID20" type="1" xpos="50" ypos="1050" bluearrow="16" redarrow="46"/>
+	<varcalc size="1" data="65536" adr="0x0de7">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0de7"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00001ff1"/>
+
+
+<medit>
+	<block name="ID21" type="1" xpos="50" ypos="1090" bluearrow="226" redarrow="-106"/>
+	<varcalc size="1" data="65536" adr="0x0de9">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="1" adr="0x0de9"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x000022f5"/>
+</calc>
+
+<jump adr="0x00002450"/>
+
+
+<medit>
+	<block name="ホットスタートのフラグをクリア" type="2" xpos="90" ypos="130" bluearrow="6" redarrow="6"/>
+	<varcalc size="2" data="0" adr="0x0f00">
+		<vconst data="65536"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<const data="0"/>
+	<mem_w size="2" adr="0x0f00"/>
+</calc>
+<jump adr="0x00000280"/>
+
+
+<medit>
+	<block name="ホットスタートのフラグを1" type="2" xpos="190" ypos="1080" bluearrow="71" redarrow="6"/>
+	<varcalc size="2" data="65536" adr="0x0f00">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<const data="1"/>
+	<mem_w size="2" adr="0x0f00"/>
+</calc>
+
+
+<medit>
+	<block name="ホットスタート?" type="1" xpos="370" ypos="190" bluearrow="562" redarrow="46"/>
+	<varcalc size="2" data="65536" adr="0x0f00">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="2" adr="0x0f00"/>
+	<const data="1"/>
+	<sub/>
+	<eq/>
+	<jump adr="0x00002753"/>
+</calc>
+
+<jump adr="0x000025ea"/>
+
+
+<medit>
+	<block name="SVSENDに1を書く" type="2" xpos="584" ypos="798" bluearrow="6" redarrow="6"/>
+	<varcalc size="2" data="65536" adr="0x004a">
+		<vconst data="65537"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<const data="1"/>
+	<mem_w size="2" adr="0x004a"/>
+</calc>
+<jump adr="0x000032f1"/>
+
+
+<medit>
+	<block name="(ID3)右脚前に曲がってるか?" type="1" xpos="450" ypos="330" bluearrow="16" redarrow="19"/>
+	<varcalc size="2" data="-45875195" adr="0x0d84">
+		<vconst data="130372"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="2" adr="0x0d84"/>
+	<const data="-700"/>
+	<sub/>
+	<lt/>
+	<jump adr="0x000025ea"/>
+</calc>
+
+<jump adr="0x000028ff"/>
+
+
+<medit>
+	<block name="姿勢_立ち" type="2" xpos="470" ypos="490" bluearrow="58" redarrow="6"/>
+	<varcalc size="1" data="0" adr="0x0f82">
+		<vconst data="65536"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<const data="0"/>
+	<mem_w size="1" adr="0x0f82"/>
+</calc>
+
+
+<medit>
+	<block name="立ちポーズ正面" type="0" xpos="470" ypos="540" bluearrow="6" redarrow="6"/>
+</medit>
+<mem_w size="2" adr="0x0a00">
+	0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,
+	0x0000,0x0064,0x0000,0x0009,0x0000,0x0009,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,0x0000,0x0064,
+	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,
+	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,
+	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,
+	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
+</mem_w>
+<mem_w size="2" adr="0x0b00">0x0028</mem_w>
+<wait data="1"/>
+<calc>
+	<mem_r size="1" adr="0x0b42"/>
+	<const data="3"/>
+	<sub/>
+	<gt/>
+	<jump adr="0x00002e9a"/>
+</calc>
+
+<jump adr="0x00002fd8"/>
+
+
+<medit>
+	<block name="<< Wait >>~" type="10" xpos="500" ypos="721" bluearrow="6" redarrow="6"/>
+</medit>
+<wait data="2"/>
+<jump adr="0x000025ea"/>
+
+<medit>
+	<block name="最初のサーボOFFフラグを消す" type="2" xpos="480" ypos="610" bluearrow="6" redarrow="6"/>
+	<varcalc size="2" data="-2162682" adr="0x0f80">
+		<vconst data="131039"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<mem_r size="2" adr="0x0f80"/>
+	<const data="-33"/>
+	<and/>
+	<mem_w size="2" adr="0x0f80"/>
+</calc>
+<jump adr="0x00002f3e"/>
+
+
+<medit>
+	<block name="初期化フラグを全部ON~" type="2" xpos="113" ypos="12" bluearrow="10" redarrow="6"/>
+	<varcalc size="2" data="16711680" adr="0x0f80">
+		<vconst data="65791"/>
+		<vaddress size="2" adr="0x0f00"/>
+		<flagconst data="1"/>
+
+	</varcalc>
+</medit>
+<calc>
+	<const data="255"/>
+	<mem_w size="2" adr="0x0f80"/>
+</calc>
+<jump adr="0x00000140"/>
+
+
+<wait size="1" adr="0x0b43"/>
